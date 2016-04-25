@@ -1,0 +1,10 @@
+/* line 1, ../../sass/partials/login.scss */
+#login {
+  width: 480px;
+  margin: auto;
+}
+
+/* line 5, ../../sass/partials/login.scss */
+h2 {
+  text-align: center;
+}

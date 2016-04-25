@@ -1,0 +1,77 @@
+/*
+Error: Undefined mixin 'backgroundImage'.
+        on line 2 of /var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss, in `backgroundImage'
+        from line 2 of /var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss
+
+1: body {
+2:     @include backgroundImage('BAC_hero-image.jpg');
+3:     background-size:auto 135%; 
+4:     background-color:#000;
+5: }
+6: #container {
+7:     width:100%;
+
+Backtrace:
+/var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss:2:in `backgroundImage'
+/var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss:2
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/bin/compass:44:in `call'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/bin/compass:23:in `load'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/bin/compass:23:in `<main>'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/home/ubuntu/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'backgroundImage'.\A         on line 2 of /var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss, in `backgroundImage'\A         from line 2 of /var/www/html/bac/client/_src/sass_b/sass/scaffolding.scss\A \A 1: body {\A 2:     @include backgroundImage('BAC_hero-image.jpg');\A 3:     background-size:auto 135%; \A 4:     background-color:#000;\A 5: }\A 6: #container {\A 7:     width:100%;"; }

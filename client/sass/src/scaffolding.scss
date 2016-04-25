@@ -1,0 +1,39 @@
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Montserrat-Light';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.eot'), '#{$icon-font-path}Montserrat-Light.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.eot?#iefix'), '#{$icon-font-path}Montserrat-Light.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.woff2'), '#{$icon-font-path}Montserrat-Light.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.woff'), '#{$icon-font-path}Montserrat-Light.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.ttf'), '#{$icon-font-path}Montserrat-Light.ttf')) format('truetype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}Montserrat-Light.svg##{$icon-font-svg-id}'), '#{$icon-font-path}Montserrat-Light.svg##{$icon-font-svg-id}')) format('svg');
+  }
+}
+
+//body {
+//    @include backgroundImage('BAC_hero-image.jpg');
+//    background-size:auto 135%; 
+//    background-color:#000;
+//}
+html { 
+  background: url(../images/BAC_hero-image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+    width:100%;
+}
+.logo {
+    img {
+       width: 100%;
+    }
+    width: 60%;
+    margin:200px auto 0px auto;
+}
+.ng-hide {
+  visibility:hidden;
+}

@@ -1,0 +1,26 @@
+<div class='animate-hide' ng-hide='vm.hide'>
+    <h2>Login</h2>
+    <form name="form" ng-submit="vm.login()" role="form">
+            <div class="form-group col-md-12" ng-class="{'has-error': form.email.$dirty && form.email.$error.email || form.email.$dirty && form.email.$error.required }">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" ng-model="vm.email" required ng-focus="vm.error=false"/>
+                <span ng-show="form.email.$dirty && form.email.$error.required" class="error-text">Email is required</span>
+                <span class="error-text" ng-show="form.email.$error.email">Not valid email!</span>
+            </div>
+        <div class="form-group col-md-12" ng-class="{ 'has-error': form.pin.$dirty && form.pin.$error.required }">
+            <label for="pin">Pin</label>
+            <input type="pin" name="pin" id="pin" class="form-control" ng-model="vm.pin" required ng-focus="vm.error=false" />
+            <span ng-show="form.pin.$dirty && form.pin.$error.required" class="error-text">Pin is required</span>
+        </div>
+	<div class="form-group col-md-12">
+		<div class="col-md-6"><input type="checkbox" name="rememberme" id="rememberme" ng-model="vm.rememberme"/> 
+		<label for="rememberme">Remember Me</label></div>
+		<p class='col-md-6 text-right'><a href="#/verifyemail">Forgot Password?</a></p>
+	</div>
+        <div class="form-actions col-md-12">
+            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary" ng-hide='vm.error'>Login <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /></button>
+             <div class="alert alert-danger" ng-show='vm.error'><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Password or username incorrect</div>
+        	<p class='text-center'>New here? <a href="#/register">Create an Account</a></p>
+        </div>
+    </form>
+</div>

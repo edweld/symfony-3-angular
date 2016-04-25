@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Bell Air Cinema</title>
+  {% block stylesheets %}{% endblock %}
+  <link rel="stylesheet" href="{{asset('bundles/framework/css/styles.css')}}"/>
+  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <div id='container'>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+          <script src="{{asset('bundles/framework/js/lib.min.js')}}"></script>
+          <script src="{{asset('bundles/framework/js/app.min.js')}}"></script>
+        {% endblock %}
+    </div>
+    </body>
+</html>
